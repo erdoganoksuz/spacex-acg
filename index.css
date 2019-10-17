@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.rocket {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rocket img {
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    width: 300px;
+}
+
+.rocket .img-wrapper {
+    animation: rotating 5s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+
+@keyframes case1 {
+    from {
+        transform: rotate(50deg) translateY(100vh);
+    }
+
+    to {
+        transform: rotate(50deg) translateY(-120vh);
+    }
+}
+
+@keyframes case2 {
+    from {
+        transform: rotate(-50deg) translateY(100vh);
+    }
+
+    to {
+        transform: rotate(-50deg) translateY(-120vh);
+    }
+}
+
+@keyframes case3 {
+    from {
+        transform: rotate(100deg) translateY(100vh);
+    }
+
+    to {
+        transform: rotate(100deg) translateY(-120vh);
+    }
+}
+
+
+@keyframes case4 {
+    from {
+        transform: rotate(180deg) translateY(100vh);
+    }
+
+    to {
+        transform: rotate(180deg) translateY(-120vh);
+    }
+}
